@@ -1,10 +1,10 @@
-import React from "react";
-import PersonDetails from "./PersonDetails";
+import React from "react"
+import PersonDetails from "./PersonDetails"
 
 export default function ListingComponent(props) {
   return (
     <ul>
-      {props.userList.map((x) => {
+      {props.userList.map(x => {
         return (
           <PersonDetails
             firstName={x.name.first}
@@ -16,8 +16,8 @@ export default function ListingComponent(props) {
             phone={x.phone}
             picture={x.picture.large}
           />
-        );
+        )
       })}
     </ul>
-  );
+  )
 }

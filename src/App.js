@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import FetchComponent from "./components/FetchComponent";
+import React from "react"
+import logo from "./logo.svg"
+import "./App.css"
+import FetchComponent from "./components/FetchComponent"
 
 class App extends React.Component {
   render() {
@@ -11,8 +11,8 @@ class App extends React.Component {
           <FetchComponent />
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
