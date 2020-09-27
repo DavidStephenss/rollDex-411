@@ -1,28 +1,29 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import RandomUserInfo from './randominfo'
-class FetchRandoms extends Component {
+import React from "react";
+import axios from "axios";
+import PersonDetails from "./PersonDetails";
+import ListingComponent from "./ListingComponent";
+
+export default class FetchRandoms extends React.Component {
   state = {
-    randomList: []
-  }
+    randomList: [],
+  };
 
   fetchRandoms = () => {
-    return axios.get('https://randomuser.me/api?results=25')
-    .then(res => {
+    return axios.get("https://randomuser.me/api?results=25").then((res) => {
       const peeps = res.data.results;
-      this.setState({ randomList: peeps});
-    })
-  }
+      this.setState({ randomList: peeps });
+    });
+  };
 
+  componentDidMount() {
+    this.fetchRandoms();
+  }
 
   render() {
-    return(
+    return (
       <div>
-        <button onClick={this.fetchRandoms}> get randoms</button>
-        <RandomUserInfo randomList={this.state.randomList}/>
+        <ListingComponent userList={this.state.randomList} />
       </div>
-    )
+    );
   }
 }
-
-export default FetchRandoms;
