@@ -59,6 +59,7 @@ class PersonDetails extends React.Component {
         <button onClick={this.handleClick}>
           {firstName} {lastName} Details
         </button>
+        <hr></hr>
       </div>
     );
   }

@@ -2,7 +2,6 @@ import React from "react";
 import PersonDetails from "./PersonDetails";
 
 export default function ListingComponent(props) {
-  //   const { users } = props.userList;
   return (
     <ul>
       {props.userList.map((x) => {
@@ -15,7 +14,7 @@ export default function ListingComponent(props) {
             userName={x.login.username}
             dob={x.dob.age}
             phone={x.phone}
-            picture={x.picture.medium}
+            picture={x.picture.large}
           />
         );
       })}

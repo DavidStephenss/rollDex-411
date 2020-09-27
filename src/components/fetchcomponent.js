@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import PersonDetails from "./PersonDetails";
 import ListingComponent from "./ListingComponent";
 
 export default class FetchRandoms extends React.Component {
