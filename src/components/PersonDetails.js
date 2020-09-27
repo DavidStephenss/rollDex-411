@@ -1,6 +1,6 @@
 import React from "react"
 
-class PersonDetails extends React.Component {
+export default class PersonDetails extends React.Component {
   state = {
     showDetail: false,
   }
@@ -72,5 +72,3 @@ class PersonDetails extends React.Component {
     )
   }
 }
-
-export default PersonDetails
