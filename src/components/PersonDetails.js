@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 export default class PersonDetails extends React.Component {
   state = {
@@ -26,7 +26,7 @@ export default class PersonDetails extends React.Component {
     if (this.state.showDetail) {
       display = (
         <li>
-          <span className="name">{firstName}</span>{" "}
+          <span className="name">{firstName}</span>{' '}
           <span className="name">{lastName}</span>
           <br></br>
           <img
@@ -35,21 +35,23 @@ export default class PersonDetails extends React.Component {
             alt={firstName + lastName}
           />
           <br></br>
-          Country: <span className="details">{country}</span>
-          <br></br>
-          Email: <span className="details">{email}</span>
-          <br></br>
-          Username: <span className="details">{userName}</span>
-          <br></br>
-          Age: <span className="details">{dob}</span>
-          <br></br>
-          Phone: <span className="details">{phone}</span>
+          <div id="details-container">
+            Username: <span className="details">{userName}</span>
+            <br></br>
+            Email: <span className="details">{email}</span>
+            <br></br>
+            Country: <span className="details">{country}</span>
+            <br></br>
+            Age: <span className="details">{dob}</span>
+            <br></br>
+            Phone: <span className="details">{phone}</span>
+          </div>
         </li>
       )
     } else if (!this.state.showDetail) {
       display = (
         <li>
-          <span className="name">{firstName}</span>{" "}
+          <span className="name">{firstName}</span>{' '}
           <span className="name">{lastName}</span>
           <br></br>
           <img

@@ -1,5 +1,5 @@
-import React from "react"
-import PersonDetails from "./PersonDetails"
+import React from 'react'
+import PersonDetails from './PersonDetails'
 
 export default function ListingComponent(props) {
   return (

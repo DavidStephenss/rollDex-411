@@ -126,14 +126,21 @@ button:hover {
 
 .details {
   color: orange;
+  /* text-align: center; */
 }
 
 .name {
   color: yellow;
   font-weight: 800;
   font-size: 25px;
+  /* text-align: left; */
 }
 
-img {
+li img {
   cursor: pointer;
+  /* text-align: center; */
+}
+
+#details-container {
+  text-align: left;
 }
